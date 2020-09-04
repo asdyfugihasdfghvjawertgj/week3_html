@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <style>
+            ul li{
+                list-style: none;
+                float: left;
+                padding: 10px;
+            }
+            .navbar{
+                width: 30%;
+                height:30px;
+                background-color: red;
+
+            }
+            .navbar ul li ul{
+                display:none;
+            }
+            .navbar ul li:hover ul{
+                display: block;
+                position: absolute;
+            }
+            .navbar ul li:hover ul li{
+                display: block;
+                background-color: blue;
+                clear: both;
+                border-bottom: 2px solid white;
+            }
+            .navbar ul li:hover ul li:hover{
+                background-color: orange;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="navbar">
+            <ul>
+                <li>Home</li>
+                <li>Department
+            <ul>
+                <li> <a href="#">Civil</a></li>
+                <li> <a href="#">Civil</a></li>
+                <li> <a href="#">Civil</a></li>
+            </ul>
+        </li>
+        </div>
+    </body>
+</html>
